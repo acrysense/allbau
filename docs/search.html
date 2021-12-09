@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLBAU - Поиск</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logotype header__logotype">
+                    <img src="img/dist/logotype.svg" alt="ALLBAU Software">
+                </a>
+                <div class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="#" class="header-nav__link">
+                                <svg class="header-nav__link--icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-solutions"></use>
+                                </svg>
+                                <span>Решения</span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#" class="header-nav__link">
+                                <svg class="header-nav__link--icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-bim"></use>
+                                </svg>
+                                <span>BIM</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-nav__content"></div>
+                </div>
+                <a href="#" class="header__btn btn modal-btn" data-id="product-order">попробовать бесплатно</a>
+                <div class="languages header__languages">
+                    <ul class="languages__list">
+                        <li class="languages__item">
+                            <a href="#" class="languages__option">русский (RU)</a>
+                        </li>
+                        <li class="languages__item">
+                            <a href="#" class="languages__option">английский (EN)</a>
+                        </li>
+                    </ul>
+                    <span class="languages__current">русский (RU)</span>
+                </div>
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="menu__wrapper">
+            <div class="menu__inner">
+                <div class="languages languages--flex menu__languages">
+                    <span class="languages__help">язык:</span>
+                    <div class="languages__wrapper">
+                        <ul class="languages__list">
+                            <li class="languages__item">
+                                <a href="#" class="languages__option">русский (RU)</a>
+                            </li>
+                            <li class="languages__item">
+                                <a href="#" class="languages__option">английский (EN)</a>
+                            </li>
+                        </ul>
+                        <span class="languages__current">русский (RU)</span>
+                    </div>
+                </div>
+                <form action="#" class="c-search">
+                    <input type="text" class="c-search__input" placeholder="поиск по сайту">
+                    <button class="c-search__btn" aria-label="Поиск">
+                        <svg class="c-search__btn--icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="solutions.html" class="nav__link">Решения</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="products.html" class="nav__link">Продукты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О компании</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="users-allplan.html" class="nav__link">пользователям allplan</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="reviews.html" class="nav__link">отзывы пользователей</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="download.html" class="nav__link">Материалы для скачивания</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="partners.html" class="nav__link">Партнеры</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="menu__btn btn modal-btn" data-id="product-order">попробовать бесплатно</a>
+            <div class="menu__block">
+                <h3 class="menu__subtitle">мы в соцсетях</h3>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Linkedin">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Facebook">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Instagram">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="YouTube">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="ВКонтакте">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Twitter">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" aria-label="Xing">
+                            <svg class="socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-xing"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- End of menu -->
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <div class="search full-screen">
+            <div class="container">
+                <div class="search-filter">
+                    <div class="search-filter__inner">
+                        <div class="search-filter__control">
+                            <input type="text" class="search-filter__input" placeholder="поиск по сайту">
+                            <button class="search-filter__btn">
+                                <span>Найти</span>
+                            </button>
+                        </div>
+                        <label for="filter-search-pages" class="filter-btn search-filter__filter-btn">
+                            <input type="checkbox" id="filter-search-pages" class="filter-btn__input">
+                            <span class="filter-btn__label">
+                                <span>Поик по страницам</span>
+                            </span>
+                        </label>
+                        <label for="filter-search-groups" class="filter-btn search-filter__filter-btn">
+                            <input type="checkbox" id="filter-search-groups" class="filter-btn__input">
+                            <span class="filter-btn__label">
+                                <span>Поик по сообществу</span>
+                            </span>
+                        </label>
+                        <button class="search-filter__toggler" aria-label="Расширенные фильтры">Скрыть</button>
+                    </div>
+                    <ul class="search-filter__list">
+                        <li class="search-filter__item">
+                            <label for="filter-01" class="filter-btn">
+                                <input type="checkbox" id="filter-01" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Материалы для скачивания</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-02" class="filter-btn">
+                                <input type="checkbox" id="filter-02" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Решения</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-03" class="filter-btn">
+                                <input type="checkbox" id="filter-03" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Продукты</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-04" class="filter-btn">
+                                <input type="checkbox" id="filter-04" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Версии</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-05" class="filter-btn">
+                                <input type="checkbox" id="filter-05" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Новости</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-06" class="filter-btn">
+                                <input type="checkbox" id="filter-06" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Мероприятия</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-07" class="filter-btn">
+                                <input type="checkbox" id="filter-07" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Видео уроки</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-08" class="filter-btn">
+                                <input type="checkbox" id="filter-08" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Материалы для скачивания</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-09" class="filter-btn">
+                                <input type="checkbox" id="filter-09" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Видео уроки</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-10" class="filter-btn">
+                                <input type="checkbox" id="filter-10" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Продукты</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-11" class="filter-btn">
+                                <input type="checkbox" id="filter-11" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Версии</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-12" class="filter-btn">
+                                <input type="checkbox" id="filter-12" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Новости</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <span class="search__amount">Всего результатов: <span>0</span></span>
+                <div class="search__results">
+                    <h2 class="search__title">По запросу “<span>аываывпырыры</span>” ничего&nbsp;не найдено.</h2>
+                    <div class="search-recommendation">
+                        <h3 class="search-recommendation__title">Рекомендации:</h3>
+                        <ul class="search-recommendation__list">
+                            <li class="search-recommendation__item">Убедитесь, что все слова написаны без ошибок.</li>
+                            <li class="search-recommendation__item">Попробуйте использовать другие ключевые слова.</li>
+                            <li class="search-recommendation__item">Попробуйте использовать более популярные ключевые слова.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="logotype footer__logotype">
+                        <img src="img/dist/logotype-white.svg" alt="ALLBAU Software">
+                    </a>
+                    <ul class="socials socials--white socials--mobile footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Linkedin">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Facebook">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Instagram">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="YouTube">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="ВКонтакте">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Twitter">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Xing">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-xing"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">ЗАЩИТА ДАННЫХ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper">
+                    <ul class="socials socials--white socials--desktop footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Linkedin">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Facebook">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Instagram">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="YouTube">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="ВКонтакте">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Twitter">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" aria-label="Xing">
+                                <svg class="socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-xing"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__group">
+                        <p class="footer__cookies">https://www.allbau.com/ использует&nbsp;cookies - <a href="#">подробнее</a></p>
+                        <a href="#" class="footer__btn btn btn--sm btn--transparent">Принять</a>
+                    </div>
+                </div>
+                <p class="footer__copyright">@ copyright allbau software 2021. <br>все права защищены</p>
+            </div>
+        </footer>
+    </div>
+    <!-- End of wrapper -->
+    <!-- Modal -->
+    <div class="modal" id="product-order">
+        <div class="modal__wrapper">
+            <h3 class="modal__title">Для получения продукта заполните все поля ниже</h3>
+            <form action="#" class="modal-form">
+                <div class="modal-form__inner">
+                    <div class="input-group modal-form__input-group">
+                        <input type="text" class="input-group__input" id="input-name-modal" placeholder="Ваше имя" required>
+                        <label for="input-name-modal" class="input-group__label">Ваше имя</label>
+                    </div>
+                    <div class="input-group modal-form__input-group">
+                        <input type="tel" class="input-group__input" id="input-tel-modal" placeholder="Ваш телефон" data-inputmask="'mask': '+38 (099) 999 99 99'" inputmode="tel" required>
+                        <label for="input-tel-modal" class="input-group__label">Ваш телефон</label>
+                    </div>
+                </div>
+                <div class="modal-form__inner">
+                    <div class="input-group modal-form__input-group">
+                        <input type="email" class="input-group__input" id="input-email-modal" placeholder="Ваш e-mail" required>
+                        <label for="input-email-modal" class="input-group__label">Ваш e-mail</label>
+                    </div>
+                    <div class="input-group modal-form__input-group">
+                        <input type="text" class="input-group__input" id="input-country-modal" placeholder="Страна" required>
+                        <label for="input-country-modal" class="input-group__label">Страна</label>
+                    </div>
+                </div>
+                <div class="modal-form__inner">
+                    <div class="input-group modal-form__input-group">
+                        <input type="text" class="input-group__input" id="input-company-modal" placeholder="Название фирмы" required>
+                        <label for="input-company-modal" class="input-group__label">Название фирмы</label>
+                    </div>
+                </div>
+                <label for="modal-policy" class="square-checkbox modal-form__checkbox">
+                    <input type="checkbox" id="modal-policy" class="square-checkbox__input" checked>
+                    <span class="square-checkbox__icon"></span>
+                    <span class="square-checkbox__label">Я согласен (а) с условиями использования конфиденциальных данных.</span>
+                </label>
+                <button class="modal-form__btn btn btn--flex">
+                    <span>Отправить заявку</span>
+                    <svg class="btn__arrow">
+                        <use xlink:href="img/dist/sprite.svg#icon-arrow-next"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
