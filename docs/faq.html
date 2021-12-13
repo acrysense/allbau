@@ -182,7 +182,7 @@
     <div class="wrapper">
         <section class="faq-main" id="faq-main">
             <div class="container">
-                <div class="faq-main__slider">
+                <div class="faq-main__slider faq-main__slider--search">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -265,6 +265,127 @@
         </section>
         <div class="faq" id="faq">
             <div class="container">
+                <div class="search-filter faq__search-filter">
+                    <div class="search-filter__inner">
+                        <div class="search-filter__control">
+                            <input type="text" class="search-filter__input" placeholder="поиск по сайту">
+                            <button class="search-filter__btn">
+                                <span>Найти</span>
+                            </button>
+                        </div>
+                        <label for="filter-search-pages" class="filter-btn search-filter__filter-btn">
+                            <input type="checkbox" id="filter-search-pages" class="filter-btn__input">
+                            <span class="filter-btn__label">
+                                <span>Поик по страницам</span>
+                            </span>
+                        </label>
+                        <label for="filter-search-groups" class="filter-btn search-filter__filter-btn">
+                            <input type="checkbox" id="filter-search-groups" class="filter-btn__input">
+                            <span class="filter-btn__label">
+                                <span>Поик по сообществу</span>
+                            </span>
+                        </label>
+                        <button class="search-filter__toggler" aria-label="Расширенные фильтры">Все фильтры</button>
+                    </div>
+                    <ul class="search-filter__list">
+                        <li class="search-filter__item">
+                            <label for="filter-01" class="filter-btn">
+                                <input type="checkbox" id="filter-01" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Материалы для скачивания</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-02" class="filter-btn">
+                                <input type="checkbox" id="filter-02" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Решения</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-03" class="filter-btn">
+                                <input type="checkbox" id="filter-03" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Продукты</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-04" class="filter-btn">
+                                <input type="checkbox" id="filter-04" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Версии</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-05" class="filter-btn">
+                                <input type="checkbox" id="filter-05" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Новости</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-06" class="filter-btn">
+                                <input type="checkbox" id="filter-06" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Мероприятия</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-07" class="filter-btn">
+                                <input type="checkbox" id="filter-07" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Видео уроки</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-08" class="filter-btn">
+                                <input type="checkbox" id="filter-08" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Материалы для скачивания</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-09" class="filter-btn">
+                                <input type="checkbox" id="filter-09" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Видео уроки</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-10" class="filter-btn">
+                                <input type="checkbox" id="filter-10" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Продукты</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-11" class="filter-btn">
+                                <input type="checkbox" id="filter-11" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Версии</span>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="search-filter__item">
+                            <label for="filter-12" class="filter-btn">
+                                <input type="checkbox" id="filter-12" class="filter-btn__input" name="filter">
+                                <span class="filter-btn__label">
+                                    <span>Новости</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
                 <div class="faq__wrapper">
                     <article class="faq__item">
                         <a href="faq-inner.html" class="faq__img">
