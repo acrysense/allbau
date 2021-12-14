@@ -13,13 +13,18 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__wrapper">
+                <button class="solutions-btn" aria-label="Решения и Продукты">
+                    <svg class="solutions-btn__icon">
+                        <use xlink:href="img/dist/sprite.svg#icon-sp-mobile"></use>
+                    </svg>
+                </button>
                 <a href="index.html" class="logotype header__logotype">
                     <img src="img/dist/logotype.svg" alt="ALLBAU Software">
                 </a>
                 <div class="header-nav">
                     <ul class="header-nav__list">
                         <li class="header-nav__item">
-                            <a href="#" class="header-nav__link">
+                            <a href="#" class="header-nav__link header-nav__link--content">
                                 <svg class="header-nav__link--icon">
                                     <use xlink:href="img/dist/sprite.svg#icon-solutions"></use>
                                 </svg>
@@ -35,7 +40,61 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="header-nav__content"></div>
+                    <div class="header-nav__content">
+                        <div class="container">
+                            <ul class="header-nav__tabs">
+                                <li class="header-nav__item">
+                                    <a href="#" class="header-nav__tab header-nav__tab--active">
+                                        <svg class="header-nav__tab--icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-solutions"></use>
+                                        </svg>
+                                        <span>решения</span>
+                                    </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="#" class="header-nav__tab">
+                                        <svg class="header-nav__tab--icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-bim"></use>
+                                        </svg>
+                                        <span>BIM</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header-nav__projects">
+                                <a href="#" class="header-nav__project">
+                                    <svg class="header-nav__project--icon">
+                                        <use xlink:href="img/dist/sprite.svg#solutions-01"></use>
+                                    </svg>
+                                    <span>Проектирование <br>зданий</span>
+                                </a>
+                                <a href="#" class="header-nav__project">
+                                    <svg class="header-nav__project--icon">
+                                        <use xlink:href="img/dist/sprite.svg#solutions-02"></use>
+                                    </svg>
+                                    <span>Застройщикам</span>
+                                </a>
+                                <a href="#" class="header-nav__project header-nav__project--active">
+                                    <svg class="header-nav__project--icon">
+                                        <use xlink:href="img/dist/sprite.svg#solutions-03"></use>
+                                    </svg>
+                                    <span>Мосты и тоннели</span>
+                                </a>
+                                <a href="#" class="header-nav__project">
+                                    <svg class="header-nav__project--icon">
+                                        <use xlink:href="img/dist/sprite.svg#solutions-04"></use>
+                                    </svg>
+                                    <span>Проектирование <br>сооружений</span>
+                                </a>
+                                <a href="#" class="header-nav__project">
+                                    <svg class="header-nav__project--icon">
+                                        <use xlink:href="img/dist/sprite.svg#solutions-05"></use>
+                                    </svg>
+                                    <span>Тюнинг allplan</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="header-nav__back">Назад</a>
                 </div>
                 <a href="#" class="header__btn btn modal-btn" data-id="product-order">попробовать бесплатно</a>
                 <div class="languages header__languages">
@@ -280,6 +339,15 @@
                         <div class="content content--medium update-info__content">
                             <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna</p>
                         </div>
+                    </div>
+                </div>
+                <div class="update-info__wrapper">
+                    <div class="update-info__content content">
+                        <h3>Solution 1</h3>
+                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna</p>
+                    </div>
+                    <div class="update-info__image">
+                        <img src="img/dist/solution-img-01.png" alt="">
                     </div>
                 </div>
             </div>
